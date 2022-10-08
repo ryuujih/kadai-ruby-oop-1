@@ -4,7 +4,7 @@ class Team
   attr_accessor :name, :win, :lose, :draw
 
   #初期化
-  def initialize(name,win,lose,draw)
+  def initialize(name, win, lose, draw)
     @name = name
     @win = win
     @lose = lose
@@ -17,7 +17,7 @@ class Team
   end
   
   def show_team_result
-    puts "#{@name}の2020年の成績は#{@win}勝 #{@lose}敗 #{@draw}分、勝率は #{@calc_win_rate}です。"
+    puts "#{@name}の2020年の成績は#{@win}勝 #{@lose}敗 #{@draw}分、勝率は #{calc_win_rate}です。"
   end
 
 end
